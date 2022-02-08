@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# make swap file
+echo making swap file
+
+# login as root
 su -
 
 

@@ -3,10 +3,6 @@
 # make swap file
 echo making swap file
 
-# login as root
-su -
-
-
 # make swap file
 dd if=/dev/zero of=/swapfile bs=1M count=2048 status=progress
 chmod 600 /swapfile

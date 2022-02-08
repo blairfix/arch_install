@@ -3,9 +3,7 @@
 # make home directories
 echo making home directories
 
-su -
-
-cd ~
+cd /home/blair/ 
 mkdir cronjobs Desktop Documents Downloads Dropbox Multimedia ipvanish Projects Research
 
 # directory for backup drive

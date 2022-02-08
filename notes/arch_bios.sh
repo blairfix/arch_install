@@ -106,6 +106,9 @@ pacman -S linux linux-headers linux-lts linux-lts-header # accept default provid
 # base developer packages
 pacman -S base-devel
 
+# ssh
+pacman -S openssh
+
 # networking
 pacman -S networkmanager wpa_supplicant wireless_tools netctl
 

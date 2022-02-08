@@ -1,8 +1,12 @@
 #!/bin/bash
 
-# make core directories
+# make home directories
+echo making home directories
+
+su -
+
 cd ~
 mkdir cronjobs Desktop Documents Downloads Dropbox Multimedia ipvanish Projects Research
 
 # directory for backup drive
-sudo mkdir -p /media/blair/Backup_drive
+mkdir -p /media/blair/Backup_drive

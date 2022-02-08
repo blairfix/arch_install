@@ -1,5 +1,7 @@
 #!/bin/bash
 
+su -
+
 
 # make swap file
 dd if=/dev/zero of=/swapfile bs=1M count=2048 status=progress

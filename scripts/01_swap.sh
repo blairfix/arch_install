@@ -14,3 +14,7 @@ cp /etc/fstab /etc/fstab.bak
 # add swap file to fstab
 echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
 
+
+# remove swap file
+# swapoff /swapfile
+# rm -f /swapfile

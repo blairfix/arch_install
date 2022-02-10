@@ -10,6 +10,11 @@ useradd -m -g users -G wheel blair
 passwd blair
 
 # edit sudo priviledges
+echo 'running visudo ... kindly uncomment  %wheel ALL=(ALL) ALL'
+echo to give the new user sudo access
+echo press a key to continue
+read k
+
 visudo
 
 # uncomment

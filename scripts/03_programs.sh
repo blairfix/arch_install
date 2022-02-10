@@ -3,54 +3,61 @@ echo installing core programs
 
 # microcode
 #--------------------------------------------------
-pacman -S amd-ucode	    # for amd
+#pacman -S amd-ucode	    # for amd
 pacman -S intel-ucode	    # for intel
 
 
 # i3
 #--------------------------------------------------
-pacman -S xorg-server				# xorg gui
+pacman -S xorg-server xorg-xinit		# xorg server
 pacman -S i3 i3-wm i3blocks i3lock i3status	# i3
 pacman -S light					# screen brightness button
-sudo chmod +s /usr/bin/light
+chmod +s /usr/bin/light
 
 
 # utilities
 #--------------------------------------------------
 pacman -S firefox	    # internet
 pacman -S fzf		    # fuzzy finder for terminal
+pacman -S alacritty	    # terminal emulator
 pacman -S htop		    # htop
-pacman -S ssmtp		    # ssmtp email
 pacman -S trash-cli	    # trash client
 pacman -S git		    # version control
 pacman -S xdotool	    # press keys using cli
 pacman -S gprename	    # batch rename
-pacman -S python3-gpg dropbox # dropbox
-dropbox autostart n	    # turn off dropbox autostart
+pacman -S man-db man-pages  # manual database
+pacman -S yay		    # installer for AUR
+
+# dropbox
+#--------------------------------------------------
+pacman -S python-dropbox # dropbox
+#dropbox autostart n	    # turn off dropbox autostart
+
+# rclone
+pacman -S rclone
+#rclong config
+#name = remote
+
 
 
 
 # server
 #--------------------------------------------------
+pacman -S openssh			# ssh
 pacman -S openssh-server		# ssh server
 pacman -S sshpass			# for using rsh keys
-curl https://rclone.org/install.sh | sudo bash  # rclone
-#rclong config
-#name = remote
 
 
 # text manipulation
 #--------------------------------------------------
-pacman -S vim nvim	    # vim
-pacman -S texlive-full	    # latex
-pacman -S texstudio	    # texstudio
-pacman -S pandoc	    # pandoc
-pacman -S pandoc-citeproc   # citeproc
-pacman -S xclip		    # xclip clipboard
-pacman -S source-highlight  # highlight code for html
-pacman -S python3-proselint # lint your writing
-pacman -S ttf-mscorefonts-installer # fonts package
-pacman -S pdfgrep	    # grep from pdfs
+pacman -S neovim gvim		# vim
+pacman -S texlive-core		# latex
+pacman -S texlive-bibtexextra	# bibtex
+pacman -S texstudio		# texstudio
+pacman -S xclip			# xclip clipboard
+pacman -S source-highlight	# highlight code for html
+pacman -S pdfgrep		# grep from pdfs
+pacman -S pandoc pandoc-eqnos	# pandoc
 
 # reading
 #--------------------------------------------------
@@ -66,7 +73,7 @@ pacman -S inkscape	    # edit vector images
 pacman -S pngquant	    # compress png
 pacman -S gimp		    # image editor
 pacman -S jpegoptim	    # compress jpeg
-pacman -S Imagemagick	    # image conversion
+pacman -S imagemagick	    # image conversion
 
 
 # audio and video
@@ -82,4 +89,9 @@ pacman -S ffmpeg	    # cli audio video editor
 pacman -S gnucash	    # accounting software
 
 
+# from AUR
+#--------------------------------------------------
+yay -S proselint	    # writing linter
+yay -S ssmtp		    # email
+yay -S ttf-ms-fonts	    # microsoft fonts
 

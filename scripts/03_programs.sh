@@ -1,97 +1,136 @@
+
 # install programs
 echo installing core programs
 
+
 # microcode
 #--------------------------------------------------
-#pacman -S amd-ucode	    # for amd
-pacman -S intel-ucode	    # for intel
+echo "Which version of microcode do you want? (amd, intel)"
+read micro
+
+if [ $micro == "amd" ] 
+then
+    # amd microcode
+    pacman -S amd-ucode	    
+else
+    # intel microcode
+    pacman -S intel-ucode	   
+fi
 
 
-# i3
+
+# xorg, i3 and light
 #--------------------------------------------------
-pacman -S xorg-server xorg-xinit		# xorg server
-pacman -S i3 i3-wm i3blocks i3lock i3status	# i3
-pacman -S light					# screen brightness button
+pacman -S xorg-server \
+          xorg-xinit \
+          i3 \
+          i3-wm \
+	  i3blocks \
+	  i3lock \
+	  i3status \
+	  light
+
 chmod +s /usr/bin/light
 
 
-# utilities
+
+# core programs
 #--------------------------------------------------
-pacman -S firefox	    # internet
-pacman -S fzf		    # fuzzy finder for terminal
-pacman -S alacritty	    # terminal emulator
-pacman -S htop		    # htop
-pacman -S trash-cli	    # trash client
-pacman -S git		    # version control
-pacman -S xdotool	    # press keys using cli
-pacman -S gprename	    # batch rename
-pacman -S man-db man-pages  # manual database
-pacman -S yay		    # installer for AUR
+pacman -S firefox \
+	  fzf \
+	  alacritty \
+	  htop \
+	  trash-cli \
+	  man-db man-pages
 
-# dropbox
+
+
+# ssh 
 #--------------------------------------------------
-pacman -S python-dropbox # dropbox
-#dropbox autostart n	    # turn off dropbox autostart
-
-# rclone
-pacman -S rclone
-#rclong config
-#name = remote
+pacman -S openssh \
+	  openssh-server \
+	  sshpass
 
 
 
-
-# server
+# latex
 #--------------------------------------------------
-pacman -S openssh			# ssh
-pacman -S openssh-server		# ssh server
-pacman -S sshpass			# for using rsh keys
+pacman -S texlive-core \
+	  texlive-fontsextra \
+	  texlive-bibtexextra \
+	  texstudio
 
 
-# text manipulation
+
+# text editors and command line tools for text
 #--------------------------------------------------
-pacman -S neovim gvim		# vim
-pacman -S texlive-core		# latex
-pacman -S texlive-bibtexextra	# bibtex
-pacman -S texstudio		# texstudio
-pacman -S xclip			# xclip clipboard
-pacman -S source-highlight	# highlight code for html
-pacman -S pdfgrep		# grep from pdfs
-pacman -S pandoc pandoc-eqnos	# pandoc
+pacman -S neovim \
+	  gvim \
+	  pandoc \
+	  pandoc-eqnos
 
-# reading
+
+
+# documents viewers
 #--------------------------------------------------
-pacman -S calibre	    # ebook reader
-pacman -S okular	    # heavy pdf reader
-pacman -S mupdf		    # light pdf reader
+pacman -S okular \
+	  mupdf \
+	  calibre
 
 
-# images
+
+# image viewers and image manipulation
 #--------------------------------------------------
-pacman -S feh		    # image viewer
-pacman -S inkscape	    # edit vector images
-pacman -S pngquant	    # compress png
-pacman -S gimp		    # image editor
-pacman -S jpegoptim	    # compress jpeg
-pacman -S imagemagick	    # image conversion
+pacman -S feh \
+	  inkscape \
+	  gimp \
+	  pngquant \
+	  jpegoptim \
+	  imagemagick
 
 
-# audio and video
+
+# audio and video tools
 #--------------------------------------------------
-pacman -S audacity	    # edit audio
-pacman -S kazam		    # screen capture
-pacman -S cheese	    # test camera
-pacman -S ffmpeg	    # cli audio video editor
+pacman -S audacity \
+          kazam \
+	  cheese \
+	  ffmpeg
+
 
 
 # finance
 #--------------------------------------------------
-pacman -S gnucash	    # accounting software
+pacman -S gnucash
 
 
-# from AUR
+
+# audio meta data
 #--------------------------------------------------
-yay -S proselint	    # writing linter
-yay -S ssmtp		    # email
-yay -S ttf-ms-fonts	    # microsoft fonts
+pacman -s kid3
 
+
+
+# fonts
+#--------------------------------------------------
+pacman -S ttf-ubuntu-font-family \
+	  gnu-free-fonts \
+	  noto-fonts \
+	  ttf-dejavu
+
+
+
+# dropbox and rclone
+#--------------------------------------------------
+pacman -S python-dropbox \
+          rclone
+
+
+
+# misc command line tools
+#--------------------------------------------------
+pacman -S xdotool \
+	  gprename \
+	  pdfgrep \
+	  xclip \
+	  source-highlight

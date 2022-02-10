@@ -110,18 +110,6 @@ git clone https://github.com/blairfix/arch_install.git
 
 
 
-# config lvm
-#---------------------------------------------
-
-# add lvm2 to mkinitcpio.conf
-# got to hooks, add 'lvm2' between block and filesystems
-vim /etc/mkinitcpio.conf
-HOOKS=(base udev autodetect modconf block lvm2 filesystems keyboard fsch)
-
-mkinitcpio -p linux
-mkinitcpio -p linux-lts
-
-
 
 # set language
 #---------------------------------------------

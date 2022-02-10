@@ -42,48 +42,52 @@ w
 
 
 
-# format file systems
+# create the file system
 #---------------------------------------------
 
-# lvm 
+# make an lvm partition
 pvcreate --dataalignment 1m /dev/sda1
 
-# volume group
-vgcreate volgroup0 /dev/sda1
+    # make volumes
+    #---------------------------------------------
+
+    # make volume group 0
+    vgcreate volgroup0 /dev/sda1
+
+    # make root file system (choose size appropiately)
+    lvcreate -L 25GB volgroup0 -n lv_root 
+
+    # make home file system
+    lvcreate -l 100%FREE volgroup0 -n lv_home
+
+    # activate volumes
+    modprobe dm_mod
+    vgscan
+    vgchange -ay
 
 
+    # format volumes
+    #---------------------------------------------
 
-# make root file system (choose size appropiately)
-lvcreate -L 10GB volgroup0 -n lv_root 
+    # format root filesystem
+    mkfs.ext4 /dev/volgroup0/lv_root
 
-# make home file system
-lvcreate -l 100%FREE volgroup0 -n lv_home
-
-
-# activate volumes
-modprobe dm_mod
-vgscan
-vgchange -ay
+    # format home filesystem  
+    mkfs.ext4 /dev/volgroup0/lv_home  
 
 
-# format root filesystem
-mkfs.ext4 /dev/volgroup0/lv_root
+    # mount root filesystem
+    mount /dev/volgroup0/lv_root /mnt
 
-# mount root filesystem
-mount /dev/volgroup0/lv_root /mnt
-
-
-# format home filesystem  
-mkfs.ext4 /dev/volgroup0/lv_home  
-
-# mount home filesystem
-mkdir /mnt/home
-mount /dev/volgroup0/lv_home /mnt/home
+    # mount home filesystem
+    mkdir /mnt/home
+    mount /dev/volgroup0/lv_home /mnt/home
 
 
-# make fstab file
-mkdir /mnt/etc
-genfstab -U -p /mnt >> /mnt/etc/fstab
+    # make fstab file
+    #---------------------------------------------
+    mkdir /mnt/etc
+    genfstab -U -p /mnt >> /mnt/etc/fstab
 
 
 
@@ -96,12 +100,20 @@ pacstrap -i /mnt base
 # change root to /mnt 
 arch-chroot /mnt
 
-# install linux kernel
-pacman -S linux linux-headers linux-lts linux-lts-header # accept default providers
+# install git
+pacman -S git
+
+# switch to home directory and clone arch install
+cd home
+git clone https://github.com/blairfix/arch_install.git
+
 
 
 # important packages
 #---------------------------------------------
+
+# install linux kernel
+pacman -S linux linux-headers linux-lts linux-lts-header 
 
 # base developer packages
 pacman -S base-devel
@@ -120,6 +132,7 @@ pacman -S lvm2
 
 # vim
 pacman -S vim
+
 
 
 # config lvm
@@ -180,10 +193,6 @@ cp /usr/share/locale/en_US/LC_MESSAGES/mit-krb5.mo /boot/grub/locale/en.mo
 grub-mkconfig -o /boot/grub/grub.cfg
 
 
-
-# install git to get build scripts
-#---------------------------------------------
-pacman -S git
 
 
 # exit chroot and reboot

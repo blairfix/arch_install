@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install linux kernel
-pacman -S linux linux-headers linux-lts linux-lts-header 
+pacman -S linux linux-headers linux-lts linux-lts-headers
 
 # base developer packages
 pacman -S base-devel

@@ -7,6 +7,6 @@ timedatectl set-timezone America/Toronto
 
 
 # enable time synchronization with systemmd
-systemctl enbable systemd-timesyncd
+systemctl enable systemd-timesyncd
 
 

@@ -1,7 +1,8 @@
 #!/bin/bash 
 
+echo install dot files
+
 # download dot file repository from github
-cd ~/Downloads
 git clone git@github.com:blairfix/blair_dots.git
 
 # run install script 
@@ -10,4 +11,4 @@ cd ./blair_dots
 
 # trash install file
 cd ..
-trash blair_dots
+rm -r blair_dots

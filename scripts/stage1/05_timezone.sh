@@ -1,27 +1,12 @@
 #!/bin/bash
 
+echo setting time zone to Toronto 
 
-# important packages
-#---------------------------------------------
+# timedatectl list-timezones
+timedatectl set-timezone America/Toronto
 
-# install linux kernel
-pacman -S linux linux-headers linux-lts linux-lts-header 
 
-# base developer packages
-pacman -S base-devel
+# enable time synchronization with systemmd
+systemctl enbable systemd-timesyncd
 
-# networking
-pacman -S networkmanager wpa_supplicant wireless_tools netctl
-
-# network manager
-pacman -S dialog
-
-# enable network manager
-systemctl enable NetworkManager
-
-# add lvm support
-pacman -S lvm2
-
-# vim
-pacman -S vim
 

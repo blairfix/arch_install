@@ -109,24 +109,6 @@ git clone https://github.com/blairfix/arch_install.git
 
 
 
-# user priviledges
-#---------------------------------------------
-
-# set root password
-passwd
-
-# add user
-useradd -m -g users -G wheel blair 
-passwd blair
-
-# edit sudo priviledges
-visudo
-
-# uncomment
-%wheel ALL=(ALL) ALL
-
-
-
 # install boot loader
 #---------------------------------------------
 

@@ -109,16 +109,6 @@ git clone https://github.com/blairfix/arch_install.git
 
 
 
-
-
-# set language
-#---------------------------------------------
-vim /etc/locale.gen
-#en_US.UTF-8
-locale-gen
-
-
-
 # user priviledges
 #---------------------------------------------
 

@@ -1,27 +1,17 @@
 #!/bin/bash
 
+echo installing users
 
-# important packages
-#---------------------------------------------
+# set root password
+passwd
 
-# install linux kernel
-pacman -S linux linux-headers linux-lts linux-lts-header 
+# add user
+useradd -m -g users -G wheel blair 
+passwd blair
 
-# base developer packages
-pacman -S base-devel
+# edit sudo priviledges
+visudo
 
-# networking
-pacman -S networkmanager wpa_supplicant wireless_tools netctl
-
-# network manager
-pacman -S dialog
-
-# enable network manager
-systemctl enable NetworkManager
-
-# add lvm support
-pacman -S lvm2
-
-# vim
-pacman -S vim
+# uncomment
+# %wheel ALL=(ALL) ALL
 

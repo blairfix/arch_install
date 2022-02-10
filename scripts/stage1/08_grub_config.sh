@@ -28,5 +28,5 @@ sed -i "s|$sfind|$sreplace|g" /etc/default/grub
 
 
 # generate grub config file
-#grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
 

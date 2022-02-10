@@ -3,11 +3,14 @@
 echo installing users
 
 # set root password
+echo enter password for root
 passwd
 
 # add user
-useradd -m -g users -G wheel blair 
-passwd blair
+echo enter name of non-root user
+read usr
+useradd -m -g users -G wheel $usr
+passwd $usr
 
 # edit sudo priviledges
 echo 'running visudo ... kindly uncomment  %wheel ALL=(ALL) ALL'

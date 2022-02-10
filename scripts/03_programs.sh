@@ -134,3 +134,9 @@ pacman -S xdotool \
 	  pdfgrep \
 	  xclip \
 	  source-highlight
+
+
+
+# c++ libraries
+#--------------------------------------------------
+pacman -S boost

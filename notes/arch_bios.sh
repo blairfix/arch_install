@@ -137,16 +137,6 @@ umount -a
 reboot
 
 
-# set time zone
-#---------------------------------------------
-timedatectl list-timezones
-timedatectl set-timezone America/Detroit
-
-
-# enable time synchronization with systemmd
-systemctl enbable systemd-timesyncd
-
-
 # name of computer
 #---------------------------------------------
 

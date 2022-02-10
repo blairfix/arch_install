@@ -1,27 +1,13 @@
 #!/bin/bash
 
+# giver computer a name
+echo enter the name of this computer
+read host
 
-# important packages
-#---------------------------------------------
+# set host name
+hostnamectl set-hostname $host
 
-# install linux kernel
-pacman -S linux linux-headers linux-lts linux-lts-header 
-
-# base developer packages
-pacman -S base-devel
-
-# networking
-pacman -S networkmanager wpa_supplicant wireless_tools netctl
-
-# network manager
-pacman -S dialog
-
-# enable network manager
-systemctl enable NetworkManager
-
-# add lvm support
-pacman -S lvm2
-
-# vim
-pacman -S vim
+# add hosts to /etc/hosts
+echo "127.0.0.1 localhost" >> /etc/hosts
+echo "127.0.1.1 $host" >> /etc/hosts
 

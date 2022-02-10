@@ -181,6 +181,11 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 
 
+# install git to get build scripts
+#---------------------------------------------
+pacman -S git
+
+
 # exit chroot and reboot
 #---------------------------------------------
 exit

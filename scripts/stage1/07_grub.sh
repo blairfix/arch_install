@@ -1,27 +1,22 @@
 #!/bin/bash
 
-
-# important packages
+# install boot loader
 #---------------------------------------------
 
-# install linux kernel
-pacman -S linux linux-headers linux-lts linux-lts-header 
+echo installing boot loader
 
-# base developer packages
-pacman -S base-devel
+# grub and dependencies
+pacman -S grub dosfstools os-prober mtools
 
-# networking
-pacman -S networkmanager wpa_supplicant wireless_tools netctl
+# install grub
+grub-install --target=i386-pc --recheck /dev/sda
 
-# network manager
-pacman -S dialog
+# grub directory
+mkdir /boot/grub/locale
 
-# enable network manager
-systemctl enable NetworkManager
+# copy locale file to grub directory
+cp /usr/share/locale/en_US/LC_MESSAGES/mit-krb5.mo /boot/grub/locale/en.mo
 
-# add lvm support
-pacman -S lvm2
-
-# vim
-pacman -S vim
+# generate grub config file
+grub-mkconfig -o /boot/grub/grub.cfg
 

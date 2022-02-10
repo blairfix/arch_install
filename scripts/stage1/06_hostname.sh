@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# giver computer a name
+# give computer a name
 echo enter the name of this computer
 read host
 

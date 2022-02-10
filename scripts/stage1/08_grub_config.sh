@@ -6,20 +6,17 @@ echo configuring grub to save your choice of kernal
 cp /etc/default/grub /etc/default/grub.bak
 
 # config grub to remember choice of kernal
-#GRUB_DISABLE_SUBMENU=y
-#GRUB_DEFAULT=saved
-#GRUB_SAVEDEFAULT=true
 
 
 # changed grub default to saved
-sfind='GRUB_DEFAULT=1'
-sreplace='GRUB_DEFAULT=saved'
-sed -i "s|$sfind|$sreplace|g" /etc/default/grub
+#sfind='GRUB_DEFAULT=1'
+#sreplace='GRUB_DEFAULT=saved'
+#sed -i "s|$sfind|$sreplace|g" /etc/default/grub
 
 # uncomment save default
-sfind='#GRUB_SAVEDEFAULT'
-sreplace='GRUB_SAVEDEFAULT'
-sed -i "s|$sfind|$sreplace|g" /etc/default/grub
+#sfind='#GRUB_SAVEDEFAULT'
+#sreplace='GRUB_SAVEDEFAULT'
+#sed -i "s|$sfind|$sreplace|g" /etc/default/grub
 
 # uncomment disable submenu
 sfind='#GRUB_DISABLE_SUBMENU'

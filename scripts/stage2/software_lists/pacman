@@ -81,3 +81,11 @@ source-highlight
 
 # c++ libraries
 boost
+
+# R and package dependencies
+r
+tk
+tcl
+jdk-openjdk
+gcc-fortran
+

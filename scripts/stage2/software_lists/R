@@ -1,7 +1,6 @@
 # R package list
 tidyverse
 BH
-bookdown
 data.table
 doSNOW
 foreach

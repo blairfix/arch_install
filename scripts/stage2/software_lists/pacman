@@ -1,7 +1,6 @@
 # xorg, i3 and light
 xorg-server 
 xorg-xinit 
-i3 
 i3-wm 
 i3blocks 
 i3lock 

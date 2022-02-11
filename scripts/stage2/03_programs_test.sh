@@ -2,6 +2,8 @@
 # install programs
 echo installing core programs
 
+# sync pacman mirrors
+pacman -Syy
 
 # microcode
 #--------------------------------------------------

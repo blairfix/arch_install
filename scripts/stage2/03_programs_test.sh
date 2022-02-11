@@ -25,4 +25,8 @@ cd software_lists
 ./get_packages.sh pacman
 
 # pipe list to pacman
-cat sf_list | pacman -S
+pacman -S $(< sf_list)
+
+
+
+

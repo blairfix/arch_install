@@ -12,4 +12,4 @@ cd ./blair_dots
 
 # trash install file
 cd ..
-rm -r blair_dots
+sudo rm -r blair_dots

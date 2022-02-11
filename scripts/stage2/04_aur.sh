@@ -3,6 +3,9 @@
 
 echo Installing programs from Ach User Repository
 
+# save working directory
+dir=$(pwd)
+
 # install yay
 #--------------------------------------------------
 cd /opt
@@ -16,6 +19,7 @@ makepkg -si
 #--------------------------------------------------
 
 # make pacman list
+cd $dir
 cd software_lists
 ./get_packages.sh aur
 

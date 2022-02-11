@@ -58,6 +58,7 @@ imagemagick
 audacity 
 cheese 
 ffmpeg
+vlc
 
 # finance
 gnucash
@@ -103,5 +104,5 @@ ttf-ubuntu-font-family
 gnu-free-fonts 
 noto-fonts 
 ttf-dejavu
-
+ttf-liberation
 

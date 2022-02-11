@@ -41,7 +41,6 @@ gvim
 pandoc 
 pandoc-crossref
 
-
 # documents viewers
 okular 
 mupdf 
@@ -66,15 +65,9 @@ gnucash
 # audio meta data
 kid3
 
-# fonts
-ttf-ubuntu-font-family 
-gnu-free-fonts 
-noto-fonts 
-ttf-dejavu
-
-# dropbox and rclone
-python-dropbox 
+# rlone and dropbox dependencies
 rclone
+python-gpgme
 
 # misc command line tools
 xdotool 
@@ -82,6 +75,9 @@ gprename
 pdfgrep 
 xclip 
 source-highlight
+
+# python 2
+python2
 
 # c++ libraries
 boost
@@ -97,4 +93,15 @@ gcc-fortran
 libmtp
 heimdall
 android-tools
+
+# icon themes
+lxappearance
+breeze
+
+# fonts
+ttf-ubuntu-font-family 
+gnu-free-fonts 
+noto-fonts 
+ttf-dejavu
+
 

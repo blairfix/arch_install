@@ -1,0 +1,88 @@
+# microcode
+amd-ucode  
+intel-ucode 
+
+# xorg, i3 and light
+xorg-server 
+xorg-xinit 
+i3 
+i3-wm 
+i3blocks 
+i3lock 
+i3status 
+light
+
+# browser
+firefox 
+geckodriver 
+
+# terminal 
+alacritty 
+fzf 
+
+# utilities
+htop 
+trash-cli 
+man-db man-pages
+
+# ssh 
+openssh 
+openssh-server 
+sshpass
+
+# latex
+texlive-core 
+texlive-fontsextra 
+texlive-bibtexextra 
+texstudio
+
+# text editors and command line tools for text
+neovim 
+gvim 
+pandoc 
+pandoc-eqnos
+
+# documents viewers
+okular 
+mupdf 
+calibre
+
+# image viewers and image manipulation
+feh 
+inkscape 
+gimp 
+pngquant 
+jpegoptim 
+imagemagick
+
+# audio and video tools
+audacity 
+kazam 
+cheese 
+ffmpeg
+
+# finance
+gnucash
+
+# audio meta data
+kid3
+
+# fonts
+ttf-ubuntu-font-family 
+gnu-free-fonts 
+noto-fonts 
+ttf-dejavu
+
+# dropbox and rclone
+python-dropbox 
+rclone
+
+# misc command line tools
+xdotool 
+gprename 
+pdfgrep 
+xclip 
+source-highlight
+
+# c++ libraries
+boost

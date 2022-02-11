@@ -37,6 +37,7 @@ chmod +s /usr/bin/light
 # core programs
 #--------------------------------------------------
 pacman -S firefox \
+	  geckodriver \
 	  fzf \
 	  alacritty \
 	  htop \

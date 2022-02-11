@@ -18,6 +18,8 @@ makepkg -si
 yay -S proselint	    # writing linter
 yay -S ssmtp		    # email
 yay -S ttf-ms-fonts	    # microsoft fonts
+yay -S armadillo	    # c++ linear algebra lib
 
 
-yay -S armadillo
+# jellyfin
+yay -S jellyfin

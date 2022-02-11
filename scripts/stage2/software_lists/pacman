@@ -19,11 +19,11 @@ fzf
 # utilities
 htop 
 trash-cli 
-man-db man-pages
+man-db 
+man-pages
 
 # ssh 
 openssh 
-openssh-server 
 sshpass
 
 # latex
@@ -36,7 +36,8 @@ texstudio
 neovim 
 gvim 
 pandoc 
-pandoc-eqnos
+pandoc-crossref
+
 
 # documents viewers
 okular 
@@ -53,7 +54,6 @@ imagemagick
 
 # audio and video tools
 audacity 
-kazam 
 cheese 
 ffmpeg
 

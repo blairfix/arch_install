@@ -16,6 +16,7 @@ alacritty
 fzf 
 
 # utilities
+dmenu
 htop 
 trash-cli 
 man-db 
@@ -88,4 +89,9 @@ tk
 tcl
 jdk-openjdk
 gcc-fortran
+
+# android packages
+libmtp
+heimdall
+android-tools
 

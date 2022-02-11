@@ -22,9 +22,12 @@ trash-cli
 man-db 
 man-pages
 
-# ssh 
+# ssh and network
 openssh 
 sshpass
+openvpn
+networkmanager-openvpn
+network-manager-applet
 
 # latex
 texlive-core 

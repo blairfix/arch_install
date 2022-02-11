@@ -1,7 +1,7 @@
-#!/bin/bash
+
+# install programs
 
 echo Installing programs from Ach User Repository
-
 
 # install yay
 #--------------------------------------------------
@@ -12,14 +12,16 @@ sudo chown -R blair:users ./yay
 cd yay
 makepkg -si
 
-
-# install packages from AUR
+# install software list
 #--------------------------------------------------
-yay -S proselint	    # writing linter
-yay -S ssmtp		    # email
-yay -S ttf-ms-fonts	    # microsoft fonts
-yay -S armadillo	    # c++ linear algebra lib
+
+# make pacman list
+cd software_lists
+./get_packages.sh aur
+
+# pipe list to pacman
+yay -S $(< sf_list)
 
 
-# jellyfin
-yay -S jellyfin
+
+

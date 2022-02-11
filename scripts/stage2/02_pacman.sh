@@ -29,6 +29,7 @@ cd software_lists
 # pipe list to pacman
 pacman -S $(< sf_list)
 
-
+# make light executable
+sudo chmod +s /usr/bin/light
 
 

@@ -1,7 +1,3 @@
-# microcode
-amd-ucode  
-intel-ucode 
-
 # xorg, i3 and light
 xorg-server 
 xorg-xinit 

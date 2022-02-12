@@ -3,7 +3,7 @@
 cd ./stage2
 
 # make directories for user
-sudo ./01_mkdirs.sh 2>&1 | tee -a install.log
+./01_mkdirs.sh 2>&1 | tee -a install.log
 
 # install pacman programs
 sudo ./02_pacman.sh 2>&1 | tee -a install.log

@@ -15,7 +15,7 @@ sudo ./02_pacman.sh 2>&1 | tee -a install.log
 ./04_dots.sh 2>&1 | tee -a install.log
 
 # install r packages
-./05_r_packages.R 2>&1 | tee -a install.log
+Rscript 05_r_packages.R 2>&1 | tee -a install.log
 
 # install blair's r packages
 ./06_blair_rpack.sh 2>&1 | tee -a install.log

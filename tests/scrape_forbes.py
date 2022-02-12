@@ -13,13 +13,16 @@ abspath = os.path.abspath(__file__)
 script_dir = os.path.dirname(abspath)
 os.chdir(script_dir)
 
+# set dir to temp folder
+os.chdir("../tmp")
+
 #  driver
 opts = FirefoxOptions()
 opts.headless = True
 opts.add_argument("--width=1920")
 opts.add_argument("--height=1080")
 
-driver = webdriver.Firefox(firefox_options = opts)
+driver = webdriver.Firefox(options = opts)
 
 
 url = "https://www.forbes.com/real-time-billionaires"

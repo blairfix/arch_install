@@ -3,7 +3,7 @@
 # first stage of arch installing, run in root session
 
 # ask user the type of installion
-echo What type of boot do you want? BOIS or UEFI?
+echo What type of boot do you want? BIOS or UEFI?
 read boot
 
 # got to stage one scripts

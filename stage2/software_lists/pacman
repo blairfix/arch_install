@@ -22,6 +22,7 @@ trash-cli
 man-db 
 man-pages
 wget
+pv
 
 # ssh and network
 openssh 

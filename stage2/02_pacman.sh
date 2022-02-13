@@ -1,6 +1,6 @@
 
 # install programs
-echo installing core programs
+echo installing pacman programs
 
 # sync pacman mirrors
 pacman -Syy

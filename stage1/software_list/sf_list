@@ -1,0 +1,12 @@
+linux
+linux-headers
+linux-lts
+linux-lts-headers
+base-devel
+networkmanager
+wpa_supplicant
+wireless_tools
+netctl
+dialog
+lvm2
+vim

@@ -44,7 +44,7 @@ firefox --new-tab https://wordpress.com/people/email-followers/economicsfromthet
 firefox -p
 
 
-
+# install systemd timers
 
 
 

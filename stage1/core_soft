@@ -1,0 +1,26 @@
+# core software for Arch install
+
+# install linux kernel
+linux 
+linux-headers 
+linux-lts 
+linux-lts-headers
+
+# base developer packages
+base-devel
+
+# networking
+networkmanager 
+wpa_supplicant 
+wireless_tools 
+netctl
+
+# network manager
+dialog
+
+# add lvm support
+lvm2
+
+# vim
+gvim
+

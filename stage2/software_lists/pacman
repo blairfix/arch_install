@@ -109,3 +109,6 @@ noto-fonts
 ttf-dejavu
 ttf-liberation
 
+# compositer
+picom
+

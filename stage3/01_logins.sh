@@ -7,8 +7,10 @@ firefox
 
 # start dropbox
 echo Please login to dropbox
-dropbox start -i &
+dropbox start -i 
 
 echo press enter when you are done
+sleep 20
 read go
+
 

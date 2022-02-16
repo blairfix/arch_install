@@ -1,5 +1,3 @@
-#!/bin/bash
-
 
 # start jellyfin and enable at boot
 sudo systemctl start jellyfin
@@ -42,9 +40,4 @@ echo '8. Select "Use selected profile ...'
 firefox -p
 firefox --new-tab https://wordpress.com/people/email-followers/economicsfromthetopdown.com
 firefox -p
-
-
-# install systemd timers
-
-
 

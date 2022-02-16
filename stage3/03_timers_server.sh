@@ -2,7 +2,7 @@
 
 echo installing server timers
 
-cd blair_dots/systemd/
+cd ~/blair_dots/systemd/
 
 # install user timers
 ./add_user_timers.sh

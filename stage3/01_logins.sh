@@ -7,5 +7,5 @@ firefox
 
 # start dropbox
 echo Please login to dropbox
-dropbox &
+dropbox start -i
 

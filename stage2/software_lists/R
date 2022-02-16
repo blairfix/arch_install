@@ -3,6 +3,7 @@ tidyverse
 BH
 data.table
 doSNOW
+cowplot
 foreach
 ggrepel
 gridExtra

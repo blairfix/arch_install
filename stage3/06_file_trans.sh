@@ -2,10 +2,14 @@
 
 echo Time to transfer your files
 echo "Here's a list of your drives:"
+echo "-----------------------------------"
+echo " "
+echo " "
+
 sudo fdisk -l
 
 echo Please enter the path to the backup drive
-echo "i.e. /dev/sdb2/"
+echo "i.e. /dev/sdb2"
 
 read bak_path
 

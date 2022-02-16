@@ -9,8 +9,8 @@ firefox
 echo Please login to dropbox
 dropbox start -i 
 
-echo press enter when you are done
 sleep 30
+echo press enter when you are done
 read go
 
 

@@ -8,7 +8,7 @@ sudo systemctl enable jellyfin
 echo '----------------------------------------------------'
 echo Setting up rclone ...
 echo ' '
-echo '1. Please type: rclone config'
+echo '1. In the new terminal, please type: rclone config'
 echo '2. Select new remote'
 echo '3. The name of the remote is "remote"'
 echo '4. Drobox should be option 11'

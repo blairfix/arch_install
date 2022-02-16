@@ -21,7 +21,7 @@ then
    ./03_timers_server.sh 2>&1 | tee -a install.log
 
     # add external drives to sftab
-   ./04_fstab.sh 2>&1 | tee -a install.log
+   sudo ./04_fstab.sh 2>&1 | tee -a install.log
 
 
     # configure rclone and selenium, start jellyfin

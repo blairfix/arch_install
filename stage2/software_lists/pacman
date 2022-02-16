@@ -68,9 +68,10 @@ gnucash
 # audio meta data
 kid3
 
-# rlone and dropbox dependencies
+# syncing utilities
 rclone
 python-gpgme
+rsync
 
 # misc command line tools
 xdotool 

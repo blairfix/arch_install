@@ -2,9 +2,9 @@
 
 echo Time to transfer your files
 echo "Here's a list of your drives:"
-echo "-----------------------------------"
-echo " "
-echo " "
+echo '-----------------------------------'
+echo ' '
+echo ' '
 
 sudo fdisk -l
 

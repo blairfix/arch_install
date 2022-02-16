@@ -10,7 +10,7 @@ echo Please login to dropbox
 dropbox start -i 
 
 echo press enter when you are done
-sleep 20
+sleep 30
 read go
 
 

@@ -1,13 +1,16 @@
 #!/bin/bash
 
-echo Transfering files to new Arch install.
-echo Make sure your backup device is connected.
-echo If it is, press any key to continue.
+echo Time to transfer your files
+echo "Here's a list of your drives:"
+sudo fdisk -l
 
-read var
+echo Please enter the path to the backup drive
+echo "i.e. /dev/sdb2/"
+
+read bak_path
 
 # mount backup drive
-sudo mount /dev/sdb2/ /media/blair/Backup_drive
+sudo mount $bak_path /media/blair/Backup_drive
 
 # copy Desktop
 rsync -avzh /media/blair/Backup_drive/Desktop/ /home/blair/Desktop

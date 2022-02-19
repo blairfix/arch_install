@@ -55,7 +55,7 @@ pvcreate --dataalignment 1m /dev/sda1
     vgcreate volgroup0 /dev/sda1
 
     # make root file system (choose size appropiately)
-    lvcreate -L 25GB volgroup0 -n lv_root 
+    lvcreate -L 40GB volgroup0 -n lv_root 
 
     # make home file system
     lvcreate -l 100%FREE volgroup0 -n lv_home

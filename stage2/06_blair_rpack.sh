@@ -32,7 +32,14 @@ git clone https://github.com/blairfix/bfstr.git
 cd ./bfstr
 ./install.sh
 
+# bfstat
+cd ~
+git clone https://github.com/blairfix/bfstat.git
+cd ./bfstat
+./install.sh
+
+
 # cleanup
 echo cleaning up 
 cd ~
-sudo rm -r hmod hubbert bfgg bfread bfstr
+sudo rm -r hmod hubbert bfgg bfread bfstr bfstat

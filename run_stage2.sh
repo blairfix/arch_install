@@ -7,7 +7,7 @@ cd ./stage2
 
 # install pacman programs
 #--------------------------------------
-sudo ./02_pacman.sh 2>&1 | tee -a install.log
+sudo ./02_pacman.sh #2>&1 | tee -a install.log
 
 
 # check if any installs failed

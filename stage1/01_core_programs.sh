@@ -2,6 +2,13 @@
 
 echo installing core packages
 
+
+# install reflector and update mirrors
+pacman -S reflector rsync curl
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+
 # make pacman list
 cd software_list
 ./get_packages.sh core_soft

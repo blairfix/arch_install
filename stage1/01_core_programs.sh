@@ -6,7 +6,7 @@ echo installing core packages
 # install reflector and update mirrors
 pacman -S reflector rsync curl
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+reflector --country 'Canada,' --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 
 # make pacman list

@@ -6,10 +6,37 @@ cd ./stage2
 ./01_mkdirs.sh 2>&1 | tee -a install.log
 
 # install pacman programs
+#--------------------------------------
 sudo ./02_pacman.sh 2>&1 | tee -a install.log
 
+
+# check if any installs failed
+echo 'Do you want to continue? (y/n)'
+read cont
+
+if [ $cont = 'n' ]
+then
+    echo ending script
+    exit 1
+fi
+
+
+
 # install programs from Arch User Repository
+#--------------------------------------
 ./03_aur.sh 2>&1 | tee -a install.log 
+
+
+# check if any installs failed
+echo 'Do you want to continue? (y/n)'
+read cont
+
+if [ $cont = 'n' ]
+then
+    echo ending script
+    exit 1
+fi
+
 
 # install config files
 ./04_dots.sh 2>&1 | tee -a install.log

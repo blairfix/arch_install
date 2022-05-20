@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # first stage of arch installing, run in root session
+#--------------------------------------
+
 
 # ask user the type of installion
 echo What type of boot do you want? BIOS or UEFI?
@@ -9,10 +11,26 @@ read boot
 # got to stage one scripts
 cd ./stage1
 
+
+
 # install core programs
+#--------------------------------------
 ./01_core_programs.sh 2>&1 | tee -a install.log
 
+
+# check if any installs failed
+echo 'Do you want to continue? (y/n)'
+read cont
+
+if [ $cont = 'n' ]
+then
+    echo ending script
+    exit 1
+fi
+
+
 # convigure lvm
+#--------------------------------------
 if [ $boot == 'BIOS' ]
 then
     # install bios version of lvm
@@ -21,6 +39,7 @@ else
     # install uefi version of lvm
     ./02_lvm_uefi_config.sh 2>&1 | tee -a install.log
 fi
+
 
 
 # set language
@@ -35,7 +54,10 @@ fi
 # give computer a name
 ./06_hostname.sh 2>&1 | tee -a install.log
 
+
+
 # install and configure grub
+#--------------------------------------
 if [ $boot == 'BIOS' ]
 then
     # install bios version of grub
@@ -47,9 +69,28 @@ else
     ./08_grub_uefi_config.sh 2>&1 | tee -a install.log
 fi
 
+
+# check if any installs failed
+echo 'Do you want to continue? (y/n)'
+read cont
+
+if [ $cont = 'n' ]
+then
+    echo ending script
+    exit 1
+fi
+
+
+
 # make swap file
+#--------------------------------------
 ./09_swap.sh 2>&1 | tee -a install.log
 
 
+# move install file to home/blair
+#--------------------------------------
+./10_mv_installer.sh
+
 # check for errors
+#--------------------------------------
 cat install.log | grep -i error > error.log

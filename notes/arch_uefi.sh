@@ -22,9 +22,9 @@ g
 # new partition 
 n
 
-# Partition number 1 (use default)
-# first sector (use default)
-# last sector
+# :::    Partition number: 1 (use default)
+# :::    first sector: (use default)
+# :::    last sector: 
 +500M
 
 # set type of partition
@@ -41,9 +41,9 @@ t
 # new partition
 n
 
-# Partition number 2 (use default)
-# first sector (use default)
-# last sector (use default, which fills rest of hard drive)
+# :::   Partition number 2 (use default)
+# :::   first sector (use default)
+# :::   last sector (use default, which fills rest of hard drive)
 
 # set type of partition
 t
@@ -51,8 +51,8 @@ t
 # partition number 
 2
 
-# partition type
-30 # Linux LVM
+# partition type to Linux LVM
+43 
 
 # write changes
 w
@@ -64,6 +64,7 @@ w
 
     # make EFI partition
     mkfs.fat -F32 /dev/sda1
+
 
     # lvm 
     pvcreate --dataalignment 1m /dev/sda2

@@ -7,7 +7,7 @@ cd software_list
 ./get_packages.sh core_soft
 
 # pipe list to pacman
-pacman -S $(< sf_list)
+pacman --verbose -S $(< sf_list)
 
 
 # enable network manager

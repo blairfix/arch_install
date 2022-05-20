@@ -3,11 +3,11 @@
 cd ./stage2
 
 # make directories for user
-./01_mkdirs.sh 2>&1 | tee -a install.log
+./01_mkdirs.sh 
 
 # install pacman programs
 #--------------------------------------
-sudo ./02_pacman.sh #2>&1 | tee -a install.log
+sudo ./02_pacman.sh
 
 
 # check if any installs failed
@@ -24,7 +24,7 @@ fi
 
 # install programs from Arch User Repository
 #--------------------------------------
-./03_aur.sh 2>&1 | tee -a install.log 
+./03_aur.sh  
 
 
 # check if any installs failed
@@ -39,19 +39,19 @@ fi
 
 
 # install config files
-./04_dots.sh 2>&1 | tee -a install.log
+./04_dots.sh 
 
 # install r packages
-Rscript 05_r_packages.R 2>&1 | tee -a install.log
+Rscript 05_r_packages.R 
 
 # install blair's r packages
-./06_blair_rpack.sh 2>&1 | tee -a install.log
+./06_blair_rpack.sh 
 
 # install python libraries
-./07_python.sh 2>&1 | tee -a install.log
+./07_python.sh 
 
 # get ipvanish servers
-./08_ipvanish.sh 2>&1 | tee -a install.log
+./08_ipvanish.sh 
 
 
 # check for errors

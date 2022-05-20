@@ -15,7 +15,7 @@ cd ./stage1
 
 # install core programs
 #--------------------------------------
-./01_core_programs.sh 2>&1 | tee -a install.log
+./01_core_programs.sh 
 
 
 # check if any installs failed
@@ -34,25 +34,25 @@ fi
 if [ $boot == 'BIOS' ]
 then
     # install bios version of lvm
-    ./02_lvm_bios_config.sh 2>&1 | tee -a install.log
+    ./02_lvm_bios_config.sh 
 else
     # install uefi version of lvm
-    ./02_lvm_uefi_config.sh 2>&1 | tee -a install.log
+    ./02_lvm_uefi_config.sh 
 fi
 
 
 
 # set language
-./03_language.sh 2>&1 | tee -a install.log
+./03_language.sh 
 
 # make users
-./04_users.sh 2>&1 | tee -a install.log
+./04_users.sh 
 
 # set timezone
-./05_timezone.sh 2>&1 | tee -a install.log
+./05_timezone.sh 
 
 # give computer a name
-./06_hostname.sh 2>&1 | tee -a install.log
+./06_hostname.sh 
 
 
 
@@ -61,12 +61,12 @@ fi
 if [ $boot == 'BIOS' ]
 then
     # install bios version of grub
-    ./07_grub_bios_install.sh 2>&1 | tee -a install.log
-    ./08_grub_bios_config.sh 2>&1 | tee -a install.log
+    ./07_grub_bios_install.sh 
+    ./08_grub_bios_config.sh 
 else
     # install uefi version of grub
-    ./07_grub_uefi_install.sh 2>&1 | tee -a install.log
-    ./08_grub_uefi_config.sh 2>&1 | tee -a install.log
+    ./07_grub_uefi_install.sh 
+    ./08_grub_uefi_config.sh 
 fi
 
 
@@ -84,12 +84,13 @@ fi
 
 # make swap file
 #--------------------------------------
-./09_swap.sh 2>&1 | tee -a install.log
+./09_swap.sh 
 
 
 # move install file to home/blair
 #--------------------------------------
 ./10_mv_installer.sh
+
 
 # check for errors
 #--------------------------------------

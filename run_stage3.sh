@@ -5,13 +5,13 @@ echo installing stage 3
 cd stage3/
 
 # login to dropbox and firefox
-./01_logins.sh 2>&1 | tee -a install.log
+./01_logins.sh 
 
 # install dropsync
-./02_timers_laptop.sh 2>&1 | tee -a install.log
+./02_timers_laptop.sh 
 
 # transfer files from backup drive
-./03_file_trans.sh 2>&1 | tee -a install.log
+./03_file_trans.sh 
 
 
 # server specific scripts
@@ -26,14 +26,14 @@ if [ $server == "yes" ]
 then
 
     # add server timers
-    ./04_timers_server.sh 2>&1 | tee -a install.log
+    ./04_timers_server.sh 
 
     # add external drives to sftab
-    sudo ./05_fstab.sh 2>&1 | tee -a install.log
+    sudo ./05_fstab.sh 
 
 
     # configure rclone and selenium, start jellyfin
-    ./06_config_server.sh 2>&1 | tee -a install.log
+    ./06_config_server.sh 
 
 fi
 

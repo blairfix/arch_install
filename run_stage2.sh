@@ -11,7 +11,7 @@ sudo ./02_pacman.sh 2>&1 | tee -a install.log
 
 
 # check if any installs failed
-echo 'Do you want to continue? (y/n)'
+echo 'Look for errors ... do you want to continue? (y/n)'
 read cont
 
 if [ $cont = 'n' ]
@@ -28,7 +28,7 @@ fi
 
 
 # check if any installs failed
-echo 'Do you want to continue? (y/n)'
+echo 'Look for errors ... do you want to continue? (y/n)'
 read cont
 
 if [ $cont = 'n' ]

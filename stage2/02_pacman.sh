@@ -27,7 +27,7 @@ cd software_lists
 ./get_packages.sh pacman
 
 # pipe list to pacman
-pacman -S $(< sf_list)
+pacman --verbose -S $(< sf_list)
 
 # make light executable
 sudo chmod +s /usr/bin/light

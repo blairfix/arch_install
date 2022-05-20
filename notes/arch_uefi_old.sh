@@ -117,16 +117,69 @@ pacstrap -i /mnt base
 # change root to /mnt 
 arch-chroot /mnt
 
-# install git
-pacman -S git
+# install linux kernel
+pacman -S linux linux-headers linux-lts linux-lts-header # accept default providers
 
-# switch to home directory and clone arch install
-cd home
-git clone https://github.com/blairfix/arch_install.git
 
-# run stage 1
-cd arch_install
-./run_stage1.sh
+
+# base developer packages
+pacman -S base-devel
+
+# networking
+pacman -S networkmanager wpa_supplicant wireless_tools netctl
+
+# network manager
+pacman -S dialog
+
+# enable network manager
+systemctl enable NetworkManager
+
+# add lvm support
+pacman -S lvm2
+pacman -S vim
+
+# add lvm2 to mkinitcpio.conf
+# got to hooks, add 'lvm2' between block and filesystems
+vim /etc/mkinitcpio.conf
+HOOKS=(base udev autodetect modconf block lvm2 filesystems keyboard fsch)
+
+mkinitcpio -p linux
+mkinitcpio -p linux-lts
+
+
+# set language
+vim /etc/locale.gen
+locale-gen
+
+# set root password
+passwd
+
+# add user
+useradd -m -g users -G wheel blair 
+passwd blair
+
+# edit sudo priviledges
+visudo
+
+# uncomment
+%wheel ALL=(ALL) ALL
+
+
+
+# install boot loader
+#---------------------------------------------
+
+# grub
+pacman -S grub efibootmgr dosfstools os-prober mtools
+
+# efi boot loader
+mkdir /boot/EFI
+mount /dev/sda1 /boot/EFI
+
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+
+
+
 
 
 # exit chroot and reboot
@@ -135,4 +188,37 @@ exit
 umount -a
 reboot
 
+
+# make swap file
+dd if=/dev/zero of=/swapfile bs=1M count=2048 status=progress
+chmod 600 /swapfile
+mkswap /swapfile
+
+# back up fstab
+cp /etc/fstab /etc/fstab.bak
+
+# add swap file to fstab
+echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
+
+
+
+# set time zone
+#---------------------------------------------
+timedatectl list-timezones
+timedatectl set-timezone America/Detroit
+
+
+# enable time synchronization with systemmd
+systemctl enbable systemd-timesyncd
+
+
+# name of computer
+#---------------------------------------------
+
+# set host name
+hostnamectl set-hostname myhostname
+
+# edit /etc/hosts
+127.0.0.1 localhost
+127.0.1.1 myhostname
 

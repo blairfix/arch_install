@@ -6,10 +6,15 @@
 echo installing boot loader
 
 # grub and dependencies
-pacman -S grub dosfstools os-prober mtools
+pacman -S grub efibootmgr dosfstools os-prober mtools
 
-# install grub
-grub-install --target=i386-pc --recheck /dev/sda
+
+# efi boot loader
+mkdir /boot/EFI
+mount /dev/sda1 /boot/EFI
+
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck 
+
 
 # grub directory
 mkdir /boot/grub/locale

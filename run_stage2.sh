@@ -24,12 +24,12 @@ then
     sudo wpa_supplicant -B -c /etc/wpa_supplicant.conf -i wlp3s0
     sudo dhcpcd wlp3s0
 
-    ping -c 5 google.com
-
 fi
 
+ping -c 5 google.com
 
-echo 'Do you have an internet connection?'
+
+echo 'Do you have an internet connection? (y/n)'
 read cont
 
 

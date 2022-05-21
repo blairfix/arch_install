@@ -1,9 +1,48 @@
 #/bin/bash
 
+# internet for laptop
+
+#--------------------------------------
+echo 'Is this a laptop? (y/n)'
+read laptop
+
+
+if [ $cont = 'y' ]
+then
+
+    # connect to internet
+    echo Enter wifi password for postcarbon
+    read pw
+
+    # connect to wifi
+    wpa_passphrase postcarbon_5g $pw | sudo tee -a /etc/wpa_supplicant.conf
+    sudo wpa_supplicant -B -c /etc/wpa_supplicant.conf -i wlp3s0
+    sudo dhcpcd wlp3s0
+
+    ping -c 5 google.com
+
+fi
+
+
+echo 'Do you have an internet connection?'
+read cont
+
+
+if [ $cont = 'n' ]
+then
+    echo ending script
+    exit 1
+fi
+
+
+
+# continue install
+
 cd ./stage2
 
 # make directories for user
 ./01_mkdirs.sh 
+
 
 # install pacman programs
 #--------------------------------------

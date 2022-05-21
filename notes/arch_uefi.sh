@@ -14,7 +14,7 @@ device list
 
 # list networks
 station wlan0 get-networks
-station wlon0 connect postcarbon_5g
+station wlan0 connect postcarbon_5g
 
 # test connection
 quit
@@ -157,6 +157,14 @@ cd arch_install
 # %wheel ALL=(ALL) ALL
 
 
+# config wifi
+#---------------------------------------------
+
+# get devices
+ip addr
+
+
+
 # exit chroot and reboot
 #---------------------------------------------
 exit
@@ -167,6 +175,16 @@ reboot
 
 # run stage 2
 #---------------------------------------------
+
+
+# connect to wifi
+wpa_passphrase postcarbon_5g  PASSWORD | sudo tee -a /etc/wpa_supplicant.conf
+sudo wpa_supplicant -B -c /etc/wpa_supplicant.conf -i wlp3s0
+sudo dhcpcd wlp3s0
+
+
+
+# install 
 cd /home/blair/arch_install
 ./run_stage2.sh
 

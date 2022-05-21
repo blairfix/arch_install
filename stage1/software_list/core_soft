@@ -5,6 +5,7 @@ linux
 linux-headers 
 linux-lts 
 linux-lts-headers
+linux-firmware
 
 # base developer packages
 base-devel
@@ -14,6 +15,7 @@ networkmanager
 wpa_supplicant 
 wireless_tools 
 netctl
+dhcpcd
 
 # network manager
 dialog

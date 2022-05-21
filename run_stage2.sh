@@ -1,5 +1,10 @@
 #/bin/bash
 
+# disable pc speaker
+
+sudo echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
+
+
 # internet for laptop
 
 #--------------------------------------

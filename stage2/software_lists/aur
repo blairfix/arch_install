@@ -1,4 +1,5 @@
 # packages from AUR
+python-pytest-runner
 proselint
 ssmtp
 ttf-ms-fonts

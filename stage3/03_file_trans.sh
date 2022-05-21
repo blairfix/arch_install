@@ -14,18 +14,18 @@ sudo mount $bak_path /media/blair/Backup_drive
 #-------------------------------------------------------
 
 # copy cronjobs
-rsync -avzh /media/blair/Backup_drive/cronjobs/ /home/blair/cronjobs
+rsync -avzh /media/blair/Backup_drive/Blair_backup/cronjobs/ /home/blair/cronjobs
 
 # copy Desktop
-rsync -avzh /media/blair/Backup_drive/Desktop/ /home/blair/Desktop
+rsync -avzh /media/blair/Backup_drive/Blair_backup/Desktop/ /home/blair/Desktop
 
 # copy Documents
-rsync -avzh /media/blair/Backup_drive/Documents/ /home/blair/Documents
+rsync -avzh /media/blair/Backup_drive/Blair_backup/Documents/ /home/blair/Documents
 
 # copy Projects
-rsync -avzh /media/blair/Backup_drive/Projects/ /home/blair/Projects
+rsync -avzh /media/blair/Backup_drive/Blair_backup/Projects/ /home/blair/Projects
 
 # copy Research
-rsync -avzh /media/blair/Backup_drive/Research/ /home/blair/Research
+rsync -avzh /media/blair/Backup_drive/Blair_backup/Research/ /home/blair/Research
 
 

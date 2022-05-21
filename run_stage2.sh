@@ -7,15 +7,15 @@ echo 'Is this a laptop? (y/n)'
 read laptop
 
 
-if [ $cont = 'y' ]
+if [ $laptop = 'y' ]
 then
 
     # connect to internet
-    echo Enter wifi password for postcarbon
+    echo "Enter wifi password for postcarbon"
     read pw
 
     # connect to wifi
-    wpa_passphrase postcarbon_5g $pw | sudo tee -a /etc/wpa_supplicant.conf
+    wpa_passphrase postcarbon_5g "$pw" | sudo tee -a /etc/wpa_supplicant.conf
     sudo wpa_supplicant -B -c /etc/wpa_supplicant.conf -i wlp3s0
     sudo dhcpcd wlp3s0
 

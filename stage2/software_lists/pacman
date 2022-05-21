@@ -6,6 +6,8 @@ i3blocks
 i3lock 
 i3status 
 light
+redshift
+
 
 # browser
 firefox 
@@ -23,6 +25,8 @@ man-db
 man-pages
 wget
 exa
+alsa-utils
+
 
 
 # ssh and network

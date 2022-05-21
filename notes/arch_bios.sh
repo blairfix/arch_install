@@ -5,7 +5,28 @@
 https://www.youtube.com/watch?v=DPLnBPM4DhI
 https://www.learnlinux.tv/arch-linux-full-installation-guide/
 
-# get disk partitions
+
+# connect to wifi
+#---------------------------------------------
+
+iwctl
+device list
+
+# list networks
+station wlan0 get-networks
+station wlon0 connect postcarbon_5g
+
+# test connection
+quit
+ping -c 3 google.com
+
+
+
+# format disk
+#---------------------------------------------
+
+
+# list disk partitions
 fdisk -l
 
 # make new partition (check actual device)

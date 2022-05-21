@@ -19,7 +19,7 @@ cd ./stage1
 
 
 # check if any installs failed
-echo 'Do you want to continue? (y/n)'
+echo 'Check for errors. Do you want to continue? (y/n)'
 read cont
 
 if [ $cont = 'n' ]
@@ -68,7 +68,7 @@ fi
 
 
 # check if any installs failed
-echo 'Do you want to continue? (y/n)'
+echo 'Check for errors. Do you want to continue? (y/n)'
 read cont
 
 if [ $cont = 'n' ]

@@ -25,6 +25,9 @@ read server
 if [ $server == "yes" ]
 then
 
+    # installing jellyfin
+    yay -S jellyfin
+
     # add server timers
     ./04_timers_server.sh 
 

@@ -137,3 +137,21 @@ umount -a
 reboot
 
 
+
+# run stage 2
+cd /home/blair/arch_install
+./run_stage2.sh
+
+
+# run stage 3
+# plug in external drive
+startx
+cd /home/blair/arch_install
+./run_stage3.sh
+
+
+
+
+
+
+

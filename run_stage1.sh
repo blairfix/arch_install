@@ -89,6 +89,3 @@ fi
 ./10_mv_installer.sh
 
 
-# check for errors
-#--------------------------------------
-cat install.log | grep -i error > error.log

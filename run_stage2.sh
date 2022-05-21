@@ -57,5 +57,3 @@ Rscript 05_r_packages.R
 sudo ./09_timezone.sh
 
 
-# check for errors
-cat install.log | grep -i error > error.log

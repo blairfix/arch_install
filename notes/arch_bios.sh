@@ -128,9 +128,15 @@ pacman -S git
 cd home
 git clone https://github.com/blairfix/arch_install.git
 
+
+
 # run stage 1
+#---------------------------------------------
 cd arch_install
 ./run_stage1.sh
+
+# uncomment wheel (on prompt)
+# %wheel ALL=(ALL) ALL
 
 
 # exit chroot and reboot
@@ -142,16 +148,18 @@ reboot
 
 
 # run stage 2
+#---------------------------------------------
 cd /home/blair/arch_install
 ./run_stage2.sh
 
 
 # run stage 3
+#---------------------------------------------
+
 # plug in external drive
 startx
 cd /home/blair/arch_install
 ./run_stage3.sh
-
 
 
 

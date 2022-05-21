@@ -53,6 +53,9 @@ Rscript 05_r_packages.R
 # get ipvanish servers
 ./08_ipvanish.sh 
 
+# set time
+sudo ./09_timezone.sh
+
 
 # check for errors
 cat install.log | grep -i error > error.log

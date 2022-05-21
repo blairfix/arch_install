@@ -48,9 +48,6 @@ fi
 # make users
 ./04_users.sh 
 
-# set timezone
-./05_timezone.sh 
-
 # give computer a name
 ./06_hostname.sh 
 

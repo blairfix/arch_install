@@ -12,6 +12,7 @@ redshift
 # browser
 firefox 
 geckodriver 
+lynx
 
 # terminal 
 alacritty 
@@ -28,6 +29,7 @@ exa
 alsa-utils
 acpi
 pulseaudio
+pavucontrol
 xf86-video-intel
 ttf-font-awesome
 

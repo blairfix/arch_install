@@ -26,7 +26,10 @@ man-pages
 wget
 exa
 alsa-utils
-
+acpi
+pulseaudio
+xf86-video-intel
+ttf-font-awesome
 
 
 # ssh and network
@@ -47,6 +50,10 @@ neovim
 gvim 
 pandoc 
 pandoc-crossref
+
+# office suites
+libreoffice-fresh
+
 
 # documents viewers
 okular 

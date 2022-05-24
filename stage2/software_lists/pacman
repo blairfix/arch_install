@@ -95,6 +95,7 @@ source-highlight
 # python 
 python2
 python-opencv
+python-pip
 
 # c++ libraries
 boost

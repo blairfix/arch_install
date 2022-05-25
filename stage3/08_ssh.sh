@@ -13,3 +13,5 @@ echo 'Either as blair_laptop'
 echo 'or as blair_server'
 
 firefox https://github.com/settings/keys
+
+

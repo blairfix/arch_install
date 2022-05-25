@@ -34,9 +34,11 @@ then
     # add external drives to sftab
     sudo ./05_fstab.sh 
 
-
     # configure rclone and selenium, start jellyfin
     ./06_config_server.sh 
+
+    # restore jellyfin library
+    sudo ./07_jellyfin_restore.sh
 
 fi
 

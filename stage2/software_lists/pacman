@@ -39,6 +39,7 @@ sshpass
 openvpn
 networkmanager-openvpn
 network-manager-applet
+tailscale
 
 # latex
 texlive-core 

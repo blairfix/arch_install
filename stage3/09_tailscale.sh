@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo systemctl enable tailscale.service
-sudo systemctl start tailscale.service
+sudo systemctl enable tailscaled.service
+sudo systemctl start tailscaled.service
 
-tailscale up
+sudo tailscale up

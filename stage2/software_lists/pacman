@@ -31,7 +31,7 @@ alsa-utils
 acpi
 pulseaudio
 pavucontrol
-
+pacman-contrib
 
 # ssh and network
 openssh 

@@ -17,6 +17,7 @@ lynx
 # terminal 
 alacritty 
 fzf 
+ripgrep
 
 # utilities
 dmenu
@@ -30,7 +31,6 @@ alsa-utils
 acpi
 pulseaudio
 pavucontrol
-ttf-font-awesome
 
 
 # ssh and network
@@ -124,6 +124,7 @@ gnu-free-fonts
 noto-fonts 
 ttf-dejavu
 ttf-liberation
+ttf-font-awesome
 
 # compositer
 picom

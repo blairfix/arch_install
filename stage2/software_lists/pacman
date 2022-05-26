@@ -32,6 +32,8 @@ acpi
 pulseaudio
 pavucontrol
 pacman-contrib
+wmctrl
+
 
 # ssh and network
 openssh 

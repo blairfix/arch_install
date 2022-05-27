@@ -13,6 +13,7 @@ redshift
 firefox 
 geckodriver 
 lynx
+newsboat
 
 # terminal 
 alacritty 
@@ -49,11 +50,13 @@ texlive-fontsextra
 texlive-bibtexextra 
 texstudio
 
+
 # text editors and command line tools for text
 neovim 
 gvim 
 pandoc 
 pandoc-crossref
+docx2txt
 
 # office suites
 libreoffice-fresh
@@ -127,6 +130,10 @@ noto-fonts
 ttf-dejavu
 ttf-liberation
 ttf-font-awesome
+ttf-bitstream-vera
+ttf-croscore
+ttf-droid
+ttf-roboto
 
 # compositer
 picom

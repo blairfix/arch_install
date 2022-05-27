@@ -3,6 +3,7 @@ python-pytest-runner
 proselint
 ssmtp
 ttf-ms-fonts
+ttf-bitstream-charter
 armadillo
 pandoc-eqnos
 kazam

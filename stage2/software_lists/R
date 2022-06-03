@@ -33,3 +33,5 @@ xtable
 wordcloud2
 ggpubr
 qdapRegex
+fastmatch
+webshot

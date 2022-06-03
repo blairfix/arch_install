@@ -34,7 +34,7 @@ pulseaudio
 pavucontrol
 pacman-contrib
 wmctrl
-
+xorg-xkill
 
 # ssh and network
 openssh 
@@ -43,11 +43,13 @@ openvpn
 networkmanager-openvpn
 network-manager-applet
 tailscale
+rtorrent
 
 # latex
 texlive-core 
 texlive-fontsextra 
 texlive-bibtexextra 
+texlive-latexextra
 texstudio
 
 
@@ -138,3 +140,5 @@ ttf-roboto
 # compositer
 picom
 
+# printer
+cups

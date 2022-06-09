@@ -3,7 +3,7 @@ python-pytest-runner
 proselint
 ssmtp
 ttf-ms-fonts
-ttf-bitstream-charter
+otf-bitstream-charter
 armadillo
 pandoc-eqnos
 kazam
@@ -12,3 +12,5 @@ dropbox
 zoom
 vim-plug
 wps-office
+wtype
+sway-launcher-desktop

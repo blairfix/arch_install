@@ -9,6 +9,14 @@ light
 redshift
 
 
+# wayland and sway
+sway
+swaybg
+xorg-xwayland
+light
+gammastep
+wl-clipboard 
+
 # browser
 firefox 
 geckodriver 
@@ -55,7 +63,6 @@ texstudio
 
 # text editors and command line tools for text
 neovim 
-gvim 
 pandoc 
 pandoc-crossref
 docx2txt
@@ -66,6 +73,7 @@ libreoffice-fresh
 
 # documents viewers
 okular 
+evince
 mupdf 
 calibre
 
@@ -142,3 +150,16 @@ picom
 
 # printer
 cups
+
+# cd
+k3b
+cdrtools
+cdrdao
+dvd+rw-tools
+
+# bluetooth
+bluez
+bluez-utils
+pulseaudio-bluetooth
+
+

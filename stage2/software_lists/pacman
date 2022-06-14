@@ -1,15 +1,16 @@
-# xorg, i3 and light
+# xorg, i3 and associated utilities
 xorg-server 
 xorg-xinit 
 i3-wm 
 i3blocks 
-i3lock 
 i3status 
-light
 redshift
+wmctrl
+xorg-xkill
+dmenu
+picom
 
-
-# wayland and sway
+# wayland, sway and associated utilities
 sway
 swaybg
 xorg-xwayland
@@ -27,22 +28,21 @@ newsboat
 alacritty 
 fzf 
 ripgrep
+exa
 
 # utilities
-dmenu
 htop 
 trash-cli 
 man-db 
 man-pages
 wget
-exa
+pacman-contrib
+unrar
+
+# audio
 alsa-utils
-acpi
 pulseaudio
 pavucontrol
-pacman-contrib
-wmctrl
-xorg-xkill
 
 # ssh and network
 openssh 
@@ -144,22 +144,22 @@ ttf-bitstream-vera
 ttf-croscore
 ttf-droid
 ttf-roboto
-
-# compositer
-picom
-
-# printer
-cups
-
+ 
 # cd
 k3b
 cdrtools
 cdrdao
 dvd+rw-tools
 
-# bluetooth
+# laptop
+# --------------------------
+acpi
 bluez
 bluez-utils
 pulseaudio-bluetooth
+
+# server
+# --------------------------
+cups
 
 

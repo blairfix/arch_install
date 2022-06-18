@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # backup jellyfin metadata
 rsync -avzh  /media/blair/Backup_drive/jellyfin_backup/ /var/lib/jellyfin 

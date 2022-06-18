@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 echo Please enter the path to the backup drive
 echo "i.e. /dev/sdb2"

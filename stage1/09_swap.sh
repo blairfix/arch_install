@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # make swap file
 echo making swap file

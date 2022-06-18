@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # start firefox to login
 echo Please login to firefox

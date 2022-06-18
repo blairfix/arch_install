@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # enable ssh
 sudo systemctl start sshd

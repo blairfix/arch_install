@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # clone blair dots git
 cd ~

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # make home directories
 echo making home directories

@@ -74,8 +74,9 @@ libreoffice-fresh
 # documents viewers
 okular 
 evince
-mupdf 
 calibre
+zathura
+zathura-pdf-mupdf
 
 # image viewers and image manipulation
 feh 
@@ -84,6 +85,7 @@ gimp
 pngquant 
 jpegoptim 
 imagemagick
+imv
 
 # audio and video tools
 audacity 
@@ -157,6 +159,7 @@ acpi
 bluez
 bluez-utils
 pulseaudio-bluetooth
+cpupower
 
 # server
 # --------------------------

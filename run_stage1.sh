@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # first stage of arch installing, run in root session
 #--------------------------------------

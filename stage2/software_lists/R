@@ -36,3 +36,5 @@ qdapRegex
 fastmatch
 webshot
 RcppRoll
+txtplot
+tm

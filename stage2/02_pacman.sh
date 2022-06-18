@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 
 # install programs
 echo installing pacman programs

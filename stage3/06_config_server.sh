@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 
 # start jellyfin and enable at boot
 sudo systemctl start jellyfin

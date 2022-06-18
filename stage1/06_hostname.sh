@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # give computer a name
 echo enter the name of this computer

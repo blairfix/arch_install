@@ -146,14 +146,18 @@ ttf-bitstream-vera
 ttf-croscore
 ttf-droid
 ttf-roboto
- 
+
+# screenshot
+grim
+slurp
+
 # cd
 k3b
 cdrtools
 cdrdao
 dvd+rw-tools
 
-# laptop
+# blair laptop
 # --------------------------
 acpi
 bluez
@@ -161,7 +165,7 @@ bluez-utils
 pulseaudio-bluetooth
 cpupower
 
-# server
+# blair server
 # --------------------------
 cups
 

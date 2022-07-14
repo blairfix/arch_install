@@ -29,6 +29,8 @@ man-pages
 wget
 pacman-contrib
 unrar
+aspell
+aspell-en
 alsa-utils
 pulseaudio
 pavucontrol
@@ -105,4 +107,7 @@ k3b
 cdrtools
 cdrdao
 dvd+rw-tools
+hugo
+nodejs
+npm
 cups

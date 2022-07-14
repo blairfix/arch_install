@@ -38,6 +38,8 @@ man-pages
 wget
 pacman-contrib
 unrar
+aspell
+aspell-en
 
 # audio
 alsa-utils
@@ -157,6 +159,11 @@ cdrtools
 cdrdao
 dvd+rw-tools
 
+# hugo
+hugo
+nodejs
+npm
+
 # blair laptop
 # --------------------------
 acpi
@@ -164,6 +171,7 @@ bluez
 bluez-utils
 pulseaudio-bluetooth
 cpupower
+tlp
 
 # blair server
 # --------------------------

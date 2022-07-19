@@ -12,3 +12,15 @@ pip install scikit-build
 pip install prompt_toolkit
 pip install pynput
 pip install pyautogui
+
+# linode
+pip install linode-cli
+pip install boto
+
+# ssl
+pip install cryptography requests
+
+
+# linode in virtual environment
+python -m venv .env
+source .env/bin/activate

@@ -31,6 +31,8 @@ pacman-contrib
 unrar
 aspell
 aspell-en
+s3cmd
+certbot
 alsa-utils
 pulseaudio
 pavucontrol

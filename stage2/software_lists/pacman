@@ -41,6 +41,10 @@ unrar
 aspell
 aspell-en
 
+# linode
+s3cmd
+certbot
+
 # audio
 alsa-utils
 pulseaudio

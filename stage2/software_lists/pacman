@@ -40,6 +40,7 @@ pacman-contrib
 unrar
 aspell
 aspell-en
+tree
 
 # linode
 s3cmd

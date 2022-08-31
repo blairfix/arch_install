@@ -17,6 +17,7 @@ xorg-xwayland
 light
 gammastep
 wl-clipboard 
+qt6-wayland
 
 # browser
 firefox 
@@ -132,6 +133,7 @@ tk
 tcl
 jdk-openjdk
 gcc-fortran
+gdal
 
 # android packages
 libmtp

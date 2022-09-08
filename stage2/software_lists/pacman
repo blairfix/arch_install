@@ -42,6 +42,7 @@ unrar
 aspell
 aspell-en
 tree
+gnuplot
 
 # linode
 s3cmd

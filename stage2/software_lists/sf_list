@@ -90,6 +90,7 @@ tk
 tcl
 jdk-openjdk
 gcc-fortran
+gdal
 libmtp
 heimdall
 android-tools
@@ -114,4 +115,9 @@ dvd+rw-tools
 hugo
 nodejs
 npm
-cups
+acpi
+bluez
+bluez-utils
+pulseaudio-bluetooth
+cpupower
+tlp

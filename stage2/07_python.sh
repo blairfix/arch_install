@@ -20,6 +20,8 @@ pip install boto
 # ssl
 pip install cryptography requests
 
+# pip auto update
+pip-review
 
 # linode in virtual environment
 python -m venv .env

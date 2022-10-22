@@ -33,6 +33,9 @@ unrar
 aspell
 aspell-en
 tree
+gnuplot
+wdiff
+openblas
 s3cmd
 certbot
 alsa-utils
@@ -81,7 +84,6 @@ gprename
 pdfgrep
 xclip
 source-highlight
-python2
 python-opencv
 python-pip
 boost
@@ -115,9 +117,5 @@ dvd+rw-tools
 hugo
 nodejs
 npm
-acpi
-bluez
-bluez-utils
-pulseaudio-bluetooth
-cpupower
-tlp
+cups
+syncthing

@@ -42,4 +42,4 @@ cd ./bfstat
 # cleanup
 echo cleaning up 
 cd ~
-sudo rm -r hmod hubbert bfgg bfread bfstr bfstat
+trash hmod hubbert bfgg bfread bfstr bfstat

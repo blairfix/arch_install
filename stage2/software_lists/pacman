@@ -43,6 +43,10 @@ aspell
 aspell-en
 tree
 gnuplot
+wdiff
+
+# computation
+openblas
 
 # linode
 s3cmd
@@ -121,7 +125,6 @@ xclip
 source-highlight
 
 # python 
-python2
 python-opencv
 python-pip
 
@@ -184,5 +187,6 @@ tlp
 # blair server
 # --------------------------
 cups
+syncthing
 
 

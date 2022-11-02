@@ -44,6 +44,7 @@ aspell-en
 tree
 gnuplot
 wdiff
+perl-image-exiftool
 
 # computation
 openblas

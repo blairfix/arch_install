@@ -14,8 +14,6 @@ sf_list = sf_list[-id]
 # remove blanks
 sf_list = sf_list[sf_list != ""]
 
-# sort in alpha order
-sf_list = sort(sf_list)
 
 # install 
 install.packages(sf_list)

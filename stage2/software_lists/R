@@ -12,6 +12,7 @@ haven
 here
 lexicon
 magrittr
+stringi
 mailR
 microbenchmark
 ngramr

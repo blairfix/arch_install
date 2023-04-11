@@ -5,9 +5,10 @@ ssmtp
 ttf-ms-fonts
 otf-bitstream-charter
 armadillo
+pandoc-bin
+pandoc-xnos
 pandoc-eqnos
 kazam
-radian
 dropbox
 zoom
 vim-plug
@@ -16,5 +17,10 @@ wtype
 sway-launcher-desktop
 typos
 
+
+
 udunits
 engauge-git
+skypeforlinux-stable-bin
+
+#adobe-reader-11

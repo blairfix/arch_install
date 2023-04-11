@@ -13,6 +13,9 @@ pip install prompt_toolkit
 pip install pynput
 pip install pyautogui
 
+# radian
+pip install -U radian
+
 # linode
 pip install linode-cli
 pip install boto

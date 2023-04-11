@@ -42,3 +42,9 @@ tm
 ggcorrplot
 xlsx
 sf
+igraph
+tidygraph
+ggraph
+ggiraph
+roll
+poweRlaw

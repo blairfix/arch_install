@@ -19,6 +19,7 @@ firefox
 geckodriver
 lynx
 newsboat
+dolphin
 alacritty
 fzf
 ripgrep
@@ -35,6 +36,7 @@ aspell-en
 tree
 gnuplot
 wdiff
+perl-image-exiftool
 openblas
 s3cmd
 certbot
@@ -117,5 +119,11 @@ dvd+rw-tools
 hugo
 nodejs
 npm
-cups
-syncthing
+wine
+winetricks
+acpi
+bluez
+bluez-utils
+pulseaudio-bluetooth
+cpupower
+tlp

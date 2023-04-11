@@ -25,6 +25,9 @@ geckodriver
 lynx
 newsboat
 
+# file browser
+dolphin
+
 # terminal 
 alacritty 
 fzf 
@@ -77,7 +80,6 @@ texstudio
 
 # text editors and command line tools for text
 neovim 
-pandoc 
 pandoc-crossref
 docx2txt
 
@@ -175,6 +177,10 @@ dvd+rw-tools
 hugo
 nodejs
 npm
+
+# wine
+wine
+winetricks
 
 # blair laptop
 # --------------------------

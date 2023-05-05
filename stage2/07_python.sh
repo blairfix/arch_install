@@ -12,6 +12,7 @@ pip install scikit-build
 pip install prompt_toolkit
 pip install pynput
 pip install pyautogui
+pip install proselint
 
 # radian
 pip install -U radian

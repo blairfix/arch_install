@@ -37,7 +37,8 @@ tree
 gnuplot
 wdiff
 perl-image-exiftool
-openblas
+qpdf
+blas
 s3cmd
 certbot
 alsa-utils
@@ -50,14 +51,14 @@ networkmanager-openvpn
 network-manager-applet
 tailscale
 rtorrent
-texlive-core
+texlive-basic
+texlive-latexrecommended
 texlive-fontsextra
 texlive-bibtexextra
 texlive-latexextra
+texlive-plaingeneric
 texstudio
 neovim
-pandoc
-pandoc-crossref
 docx2txt
 libreoffice-fresh
 okular
@@ -92,7 +93,7 @@ boost
 r
 tk
 tcl
-jdk-openjdk
+jdk17-openjdk
 gcc-fortran
 gdal
 libmtp
@@ -127,3 +128,4 @@ bluez-utils
 pulseaudio-bluetooth
 cpupower
 tlp
+libdvdcss

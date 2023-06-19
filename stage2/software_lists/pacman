@@ -51,7 +51,8 @@ perl-image-exiftool
 qpdf
 
 # computation
-openblas
+#openblas
+blas
 
 # linode
 s3cmd
@@ -72,7 +73,11 @@ tailscale
 rtorrent
 
 # latex
-texlive-core 
+texlive-basic
+texlive-latexrecommended
+texlive-plaingeneric
+texlive-fontsrecommended
+
 texlive-fontsextra 
 texlive-bibtexextra 
 texlive-latexextra
@@ -81,7 +86,7 @@ texstudio
 
 # text editors and command line tools for text
 neovim 
-pandoc-crossref
+#pandoc-crossref
 docx2txt
 
 # office suites
@@ -192,6 +197,7 @@ bluez-utils
 pulseaudio-bluetooth
 cpupower
 tlp
+libdvdcss
 
 # blair server
 # --------------------------

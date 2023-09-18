@@ -5,6 +5,7 @@ ttf-ms-fonts
 otf-bitstream-charter
 armadillo
 pandoc-bin
+pandoc-crossref-bin
 pandoc-xnos
 pandoc-eqnos
 kazam

@@ -44,6 +44,7 @@ xlsx
 sf
 igraph
 tidygraph
+tidyquant
 ggraph
 ggiraph
 roll

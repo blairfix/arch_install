@@ -125,6 +125,7 @@ kid3
 rclone
 python-gpgme
 rsync
+syncthing
 
 # misc command line tools
 xdotool 
@@ -202,6 +203,7 @@ libdvdcss
 # blair server
 # --------------------------
 cups
-syncthing
+jellyfin-server
+jellyfin-web
 
 

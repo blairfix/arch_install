@@ -203,7 +203,5 @@ libdvdcss
 # blair server
 # --------------------------
 cups
-jellyfin-server
-jellyfin-web
 
 

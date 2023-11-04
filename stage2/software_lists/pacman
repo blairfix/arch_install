@@ -33,6 +33,8 @@ alacritty
 fzf 
 ripgrep
 exa
+fd
+tree
 
 # utilities
 htop 
@@ -44,7 +46,6 @@ pacman-contrib
 unrar
 aspell
 aspell-en
-tree
 gnuplot
 wdiff
 perl-image-exiftool
